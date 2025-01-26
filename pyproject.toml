@@ -15,6 +15,7 @@ pydantic-settings = "^2.7.1"
 sqlalchemy = "^2.0.37"
 loguru = "^0.7.3"
 wemake-python-styleguide = "^1.0.0"
+pipely = "^0.3.0"
 
 
 [build-system]
