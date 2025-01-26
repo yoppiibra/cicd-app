@@ -27,9 +27,7 @@ jobs:
         python-version: '3.12.7'
     
     - name: Install poetry
-      run: |
-        curl -sSL https://install.python-poetry.org/ | python -
-        export PATH=$HOME/.local/bin:PATH
+      uses: snok/install-poetry@v1
       
     - name: Install dependencies using poetry
       run: poetry run make install
