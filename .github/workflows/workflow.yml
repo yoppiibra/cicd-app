@@ -24,11 +24,11 @@ jobs:
       uses: actions/setup-python@v5
       with:
         python-version: '3.12.7'
-    
-    - name: Install poetry
-      run: |
-        curl -sSL https://install.python-poetry.org | python -
-        export PATH=$HOME/.local/bin:$PATH
+      
+     - name: Install poetry
+       uses: abatilo/actions-poetry@v2.0.0
+       with:
+        poetry-version: latest
 
     - name: Install dependencies using poetry
       run: poetry run make install
