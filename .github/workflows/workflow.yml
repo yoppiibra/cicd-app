@@ -1,15 +1,16 @@
-# This is our Github Actions Workflow..!!
+# This is our first Github Actions Workflow!
 
 name: App Workflow
 
 on:
   push:
     branches: [ "main" ]
-  pull-request:
+  pull_request:
     branches: [ "main" ]
 
 permissions:
   contents: read
+
 
 jobs:
 
@@ -20,16 +21,16 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v4
 
-    - name: Set up python 3.12.7
+    - name: Set up Python
       uses: actions/setup-python@v5
       with:
         python-version: '3.12.7'
+    
+    - name: Install poetry
+      run: |
+        curl -sSL https://install.python-poetry.org/ | python -
+        export PATH=$HOME/.local/bin:PATH
       
-     - name: Install poetry
-       uses: action/actions-poetry@v2.0.0
-       with:
-        poetry-version: latest
-
     - name: Install dependencies using poetry
       run: poetry run make install
 
