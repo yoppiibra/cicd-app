@@ -1,0 +1,15 @@
+2025-01-26 14:51:19.908 | INFO     | __main__:main:21 - running the application....
+2025-01-26 14:51:19.937 | INFO     | model.model_service:load_model:40 - checking the existences of model config file at model\models/rf_db_v2
+2025-01-26 14:51:20.001 | INFO     | model.model_service:load_model:54 - model rf_db_v2 exist ->loading model configuration file
+2025-01-26 14:51:20.184 | INFO     | model.model_service:predict:75 - make prediction
+2025-01-26 14:51:20.215 | INFO     | __main__:main:37 - Prediction= [2457.1125]
+2025-01-26 14:58:22.311 | INFO     | __main__:main:21 - running the application....
+2025-01-26 14:58:22.311 | INFO     | model.model_service:load_model:40 - checking the existences of model config file at model\models/rf_db_v2
+2025-01-26 14:58:22.311 | INFO     | model.model_service:load_model:54 - model rf_db_v2 exist ->loading model configuration file
+2025-01-26 14:58:22.348 | INFO     | model.model_service:predict:75 - make prediction
+2025-01-26 14:58:22.363 | INFO     | __main__:main:37 - Prediction= [2457.1125]
+2025-01-26 15:03:41.748 | INFO     | __main__:main:21 - running the application....
+2025-01-26 15:03:41.748 | INFO     | model.model_service:load_model:40 - checking the existences of model config file at model\models/rf_db_v2
+2025-01-26 15:03:41.748 | INFO     | model.model_service:load_model:54 - model rf_db_v2 exist ->loading model configuration file
+2025-01-26 15:03:41.779 | INFO     | model.model_service:predict:75 - make prediction
+2025-01-26 15:03:41.802 | INFO     | __main__:main:37 - Prediction= [2457.1125]
